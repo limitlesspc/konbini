@@ -1,0 +1,41 @@
+{
+  "name": "@limitlesspc/konbini",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Convenient stores",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limitlesspc/konbini.git"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "prettier": "@limitlesspc/prettier-config",
+  "scripts": {
+    "build": "tsup",
+    "fmt": "prettier . --write",
+    "fmt:check": "prettier . --check",
+    "prepack": "nr build",
+    "release": "bumpp && pnpm publish",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "trkl": "^2.0.1"
+  },
+  "devDependencies": {
+    "@limitlesspc/prettier-config": "^1.0.0",
+    "bumpp": "^9.8.1",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3"
+  }
+}
