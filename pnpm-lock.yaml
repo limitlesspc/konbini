@@ -177,11 +177,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@limitlesspc/prettier-config@1.1.1':
-    resolution: {integrity: sha512-16721vu/ZpaTE+WrchJQNy+cDLVCui8DqeeJW3JJOkCeHNPiVZrG0RD7KUSiYue5/vuh39V8oMwYkpya/CFqsA==}
-    peerDependencies:
-      prettier: '>=3.1.0'
-
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
@@ -198,6 +193,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.29':
     resolution: {integrity: sha512-uw6guiW/gcAGPDhLmd77/6lW8QLeiV5RUTsAX46Db6oLhGaVj4lhnPwb184s1bkc8kdVg/+h988dro8GRDpmYQ==}
+
+  '@limitlesspc/prettier-config@1.1.1':
+    resolution: {integrity: sha512-ICQn7rzCPeBcRnScAyTycIXbUnu/AHpMdUvf3iulEMwHdoK21HQzXNA5J3k5rKm/MBQcWblWp8vop2MLzbWtPg==}
+    peerDependencies:
+      prettier: '>=3.1.0'
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -851,10 +851,6 @@ snapshots:
   '@esbuild/win32-x64@0.25.5':
     optional: true
 
-  '@limitlesspc/prettier-config@1.1.1(prettier@3.6.2)':
-    dependencies:
-      prettier: 3.6.2
-
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -877,6 +873,10 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.4
+
+  '@limitlesspc/prettier-config@1.1.1(prettier@3.6.2)':
+    dependencies:
+      prettier: 3.6.2
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
